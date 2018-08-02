@@ -1,6 +1,6 @@
 *** Test Cases ***
 verify_login_with_invalid_data.robot
-    Open Browser    http://emc.flascloud.com    Chrome
+    Open Browser    http://emc.flas.com    Chrome
     Wait Until Page Contains Element    xpath=//input[@name='username']    30
     Input Text    xpath=//input[@name='username']    siva
     Wait Until Page Contains Element    xpath=//input[@name='password']    30
