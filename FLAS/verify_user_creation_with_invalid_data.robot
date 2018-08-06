@@ -1,5 +1,5 @@
 ***Settings***
-Library           Selenium2Library    WITHNAME    se
+Library           Selenium2Library    WITH NAME    se
 
 *** Test Cases ***
 verify_user_creation_with_invalid_data.robot
