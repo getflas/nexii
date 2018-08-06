@@ -1,5 +1,8 @@
+***Settings***
+Library           Selenium2Library    WITHNAME    se
+
 *** Test Cases ***
-verify_user_creation_with_invalid_data
+verify_user_creation_with_invalid_data.robot
     Open Browser    http://default.flascloud.com    Chrome
     Maximize Browser Window
     Wait Until Page Contains Element    xpath=//input[@name='username']    30
