@@ -1,8 +1,10 @@
+***Settings***
+Library           Selenium2Library    WITH NAME    se
+Library           Selenium2Library    WITH NAME    se
+
 *** Test Cases ***
-verify_admin_login_with_valid_data
-    Open Browser    http://192.168.50.66/    ff
-    Input Text    xpath=//input[@id='emailid']    veera@gm.com
-    Input Password    xpath=//input[@id='pwd']    mypassword
-    Click Button    xpath=//button[@class='btn btn-purple btn-block text-uppercase waves-effect waves-light']
-    Wait Until Page Contains    User Management    50
-    Close Browser
+verify_admin_login_with_valid_data.robot
+    ${chrome_options} =     Evaluate    sys.modules['selenium.webdriver'].ChromeOptions()    sys, selenium.webdriver
+    Call Method    ${chrome_options}   add_argument    headless
+    Call Method    ${chrome_options}   add_argument    disable-gpu
+    ${options}=     Call Method     ${chrome_options}    to_capabilities  
