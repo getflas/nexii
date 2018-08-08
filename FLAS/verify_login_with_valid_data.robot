@@ -6,8 +6,10 @@ verify_login_with_valid_data.robot
     ${chrome_options} =    Evaluate    sys.modules['selenium.webdriver'].ChromeOptions()    sys, selenium.webdriver
     Call Method    ${chrome_options}    add_argument    headless
     Call Method    ${chrome_options}    add_argument    disable-gpu
+    Call Method    ${chrome_options}    add_argument    disable-extension
+    Call Method    ${chrome_options}    add_argument    disable-dev-shm-usage
     ${options}=    Call Method    ${chrome_options}    to_capabilities
-    Open Browser    http://emc.flascloud.com    Chrome
+    Open Browser    http://emc.flascloud.com    Chrome    desired_capabilities=${options}
     Maximize Browser Window
     Wait Until Page Contains Element    xpath=//input[@name='username']    30
     Input Text    xpath=//input[@name='username']    siva
