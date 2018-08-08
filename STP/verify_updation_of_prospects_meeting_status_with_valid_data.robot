@@ -1,3 +1,6 @@
+***Settings***
+
+
 *** Test Cases ***
 verify_updation_of_prospects_meeting_status_with_valid_data.robot
     Open Browser    http://emc.flascloud.com    Chrome
