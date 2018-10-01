@@ -4,6 +4,7 @@ Library           Collections
 
 *** Variables ***
 @{packages}       robotframework-selenium2library    Collections
+@{softwares}       python-pip
 @{stp_server}     os=ubuntu    version=14.04    ip=
 
 *** Test Cases ***
