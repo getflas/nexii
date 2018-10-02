@@ -1,6 +1,7 @@
 *** Settings ***
 Library           Selenium2Library    WITH NAME    se
 Library           Collections
+Library           IOManager
 
 *** Variables ***
 @{packages}       robotframework-selenium2library    Collections
